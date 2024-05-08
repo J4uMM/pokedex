@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: rgb(210, 218, 232);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+#pokedex{
+    width: 20rem;
+    height: 45rem;
+    background-color: rgb(116, 203,  72);
+    border-radius: 38px;
+    padding: 0;
+   
+}
+
+
+#pesquisar{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1.65rem;
+    font-weight: bold;
+    transform: translateY(65px);
+    width: 75%;
+
+}
+
+#pesquisar:focus{
+    outline: none;
+}
+
+#barra-topo{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    
+
+}
+
+#numero{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    transform: translateY(85px);
+    font-size: .82rem;
+    font-weight: bold;
+   
+}
+
+
+#topo{
+    height: 40%;
+    padding: 0.5rem;
+    background: url('../pokeball.png');
+}
+
+#poke-image-placeholder{
+    display: flex;
+    justify-content: center;
+}
+
+#poke-image{
+    width: 167px;
+    height: 200px;
+    transform:translate(64px, 100px)
+}
+
+#types{
+    transform: translate(23px, -182px);
+    display: flex;
+    gap: 1rem;
+
+}
+
+#types span{
+    color: white;
+    padding: 0.12rem .5rem;
+    border-radius: 38px;
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
+#data{
+    background-color: white;
+    height: 60%;
+    border-radius: 38px;
+
+}
+
+#data h4{
+    text-align: center;
+    transform: translateY(20px);
+}
+
+#status{
+    width: 80%;
+    font-size: 0.65;
+    gap: 0.6;
+}
+
+.status-row{
+    display: flex;
+    transform: translate(24px,10px);
+    align-items: center;
+    height: 1.65rem;
+    
+}
+
+.status-desc, .status-numero{
+    width: 15%;
+  
+}
+
+.status-numero{
+    transform: translateX(20px);
+    font-size: 0.7rem;
+    font-weight: bold;
+
+}
+
+.status-desc{
+    color:rgb(195, 197, 199);
+    font-weight: bold;
+    font-size: 0.7rem;
+    transform: translateX(-6px);
+    padding-right: 0.5rem;
+    
+}
+
+.status-barra{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.barra-outer{
+    background-color: rgba(116, 203, 72, 0.3);
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 4px;
+    display: flex;
+    transform: translateX(23px);
+    
+}
+
+.barra-inner{
+    background-color: rgb(116, 203, 72);
+    border-radius: 4px;
+}
+
+#base-status{
+    transition: color 0.5s ease-in-out;
+}
